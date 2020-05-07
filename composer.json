@@ -1,0 +1,33 @@
+{
+  "name": "alexlcdee/messenger-tarantool-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony MessengerTarantoolBundle",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "alexlcdee",
+      "email": "info@alexlcdee.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "alexlcdee/messenger-tarantool": "^0.0",
+    "symfony/framework-bundle": "^5.0"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/alexlcdee/messenger-tarantool.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"AlexLcDee\\MessengerTarantoolBundle\\": ""},
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": { "AlexLcDee\\MessengerTarantoolBundle\\Tests\\": "Tests" }
+  }
+}

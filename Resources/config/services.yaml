@@ -1,0 +1,9 @@
+services:
+  AlexLcDee\Messenger\Tarantool\Transport\QueueTransportFactory:
+    tags: ['messenger.transport_factory', 'messenger.transport.tarantool.factory', 'messenger.transport.async']
+    arguments:
+      $clientFactory: '@messenger_tarantool.client_factory'
+      $logger: '@logger'
+
+  messenger_tarantool.client_factory:
+    class: AlexLcDee\Messenger\Tarantool\Tarantool\SelectorClientFactory
