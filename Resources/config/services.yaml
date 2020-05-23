@@ -6,4 +6,4 @@ services:
       $logger: '@logger'
 
   messenger_tarantool.client_factory:
-    class: AlexLcDee\Messenger\Tarantool\Tarantool\SelectorClientFactory
+    class: AlexLcDee\MessengerTarantoolBundle\TarantoolClientFactory
