@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlexLcDee\MessengerTarantoolBundle;
 
+use AlexLcDee\Messenger\Tarantool\Tarantool\ClientFactory;
 
 class TarantoolClientFactory implements ClientFactory
 {
