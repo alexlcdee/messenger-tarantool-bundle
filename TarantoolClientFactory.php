@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace AlexLcDee\MessengerTarantoolBundle;
 
 use AlexLcDee\Messenger\Tarantool\Tarantool\ClientFactory;
+use AlexLcDee\Messenger\Tarantool\Tarantool\PhpClientFactory;
+use AlexLcDee\Messenger\Tarantool\Tarantool\ExtensionClientFactory;
 
 class TarantoolClientFactory implements ClientFactory
 {
